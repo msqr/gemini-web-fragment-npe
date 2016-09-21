@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="gemini-web-npe-host">
+        <wb-resource deploy-path="/" source-path="/web" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="java-output-path" value="/gemini-web-npe-host/web/WEB-INF/classes"/>
+        <property name="context-root" value="/gemini-web-npe"/>
+    </wb-module>
+</project-modules>

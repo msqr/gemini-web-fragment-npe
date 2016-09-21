@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gemini-web-npe-host
+Bundle-SymbolicName: gemini-web-npe-host
+Bundle-Version: 1.0.0
+Bundle-ClassPath: WEB-INF/classes/
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: 
+ javax.el,
+ javax.servlet,
+ javax.servlet.annotation,
+ javax.servlet.http,
+ javax.servlet.jsp,
+ javax.servlet.jsp.el,
+ javax.servlet.jsp.tagext
+Web-ContextPath: /gemini-web-npe
