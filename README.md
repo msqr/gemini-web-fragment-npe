@@ -1,6 +1,9 @@
 # Gemini Web 2.2.7 NPE
 
-Demonstration of `NullPointerException` in Gemini Web 2.2.7 when adding a bundle fragment to a web application bundle. The problem arises when the fragment bundle introduces a class in a package that doesn't exist in the host bundle. For example, if in the host bundle there is a servlet in package `test`:
+Demonstration of `NullPointerException` in Gemini Web 2.2.7 when adding a bundle
+fragment to a web application bundle. The problem arises when the fragment bundle
+introduces a class in a package that doesn't exist in the host bundle. For example,
+if in the host bundle there is a servlet in package `test`:
 
 ```java
 package test;
@@ -70,6 +73,13 @@ Caused by: java.lang.NullPointerException
 	...
 ```
 
-Looking in `BundleDirContext:118`, a `url` property is `null` for the `BundleEntry` describing the `test.frag` package directory (described as `BundleEntry [bundle=gemini-web-npe-host_1.0.0 [177],path=WEB-INF/classes/test/frag/]`).
+Looking in `BundleDirContext:118`, a `url` property is `null` for the `BundleEntry`
+describing the `test.frag` package directory (described as `BundleEntry
+[bundle=gemini-web-npe-host_1.0.0 [177],path=WEB-INF/classes/test/frag/]`).
 
-The `NPE` does *not* occur if the `FragHello` servlet is moved into the `test` package.
+The `NPE` does *not* occur if the `FragHello` servlet is moved into the `test`
+package.
+
+This repository contains two Eclipse PDE projects that expect Gemini Web to be
+provided by the PDE target runtime. Launch the runtime to see the NPE thrown during
+startup.
