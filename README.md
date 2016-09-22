@@ -82,5 +82,8 @@ package.
 
 This repository contains two Eclipse PDE projects that expect Gemini Web to be
 provided by the PDE target runtime. Launch the runtime to see the NPE thrown during
-startup. I have submitted [bug 501935](https://bugs.eclipse.org/bugs/show_bug.cgi?id=501935)
-to Eclipse.
+startup. I have submitted [bug 501935][bug] to Eclipse. I have also developed [a
+patch][patch] that fixes the problem for my use case.
+
+ [bug]: https://bugs.eclipse.org/bugs/show_bug.cgi?id=501935
+ [patch]: https://github.com/msqr/eclipse-gemini-web/commit/779034815c8170ea6a4e923ecd38e3a6006b8f8c
